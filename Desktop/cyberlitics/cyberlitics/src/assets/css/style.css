@@ -327,6 +327,14 @@ section {
     margin-right: 15px;
 }
 
+#logo-cyber {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+    vertical-align: middle;
+}
+
 #navigation-logo {
     display: none;
 }
@@ -1457,6 +1465,11 @@ blockquote {
     color:#b4b4b4;
     line-height:auto;
     margin:0;
+}
+
+.big-text{
+    font-size: 300px;
+    color: black;
 }
 
 
