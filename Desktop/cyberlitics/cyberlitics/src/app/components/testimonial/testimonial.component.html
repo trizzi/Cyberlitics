@@ -4,39 +4,21 @@
     <div class="row clearfix">
 
         <div class="section-heading">
-            <h3>FEEDBACK</h3>
-            <h2 class="section-title">What our customers are saying</h2>
+            <h3>{{testimonial.title}}</h3>
+            <h2 class="section-title">{{testimonial.description}}</h2>
         </div>
 
         <!--User Testimonial-->
+        @for(iconBlock of testimonial.iconBlock; track iconBlock){
         <blockquote class="col-3 testimonial classic">
-            <img src="../assets/images/user-images/user-1.jpg" alt="User"/>
-            <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore
-                et dolore magna aliqua</q>
-            <footer>John Doe - Happy Customer</footer>
+            <img src={{iconBlock.img}} alt="User"/>
+            <q>{{iconBlock.name}}</q>
+            <footer>{{iconBlock.footer}}</footer>
         </blockquote>
+    }
         <!-- End of Testimonial-->
 
-        <!--User Testimonial-->
-        <blockquote class="col-3 testimonial classic">
-            <img src="../assets/images/user-images/user-2.jpg" alt="User"/>
-            <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore
-                et dolore magna aliqua</q>
-            <footer>Roslyn Doe - Happy Customer</footer>
-        </blockquote>
-        <!-- End of Testimonial-->
-
-        <!--User Testimonial-->
-        <blockquote class="col-3 testimonial classic">
-            <img src="../assets/images/user-images/user-3.jpg" alt="User"/>
-            <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore
-                et dolore magna aliqua</q>
-            <footer>Thomas Doe - Happy Customer</footer>
-        </blockquote>
-        <!-- End of Testimonial-->
+      
 
     </div>
 
