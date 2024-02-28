@@ -1,0 +1,9 @@
+@for(socialBlock of social?.data?.socialBlock; track socialBlock){
+    <li>
+        <a target={{socialBlock?.target}} title={{socialBlock.username}} href={{socialBlock.url}}>
+            <i class='fa fa-{{socialBlock.icon}} fa-1x'></i><span>{{socialBlock.title}}</span>
+        </a>
+    </li>
+}
+
+

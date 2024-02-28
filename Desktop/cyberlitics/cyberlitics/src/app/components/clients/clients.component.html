@@ -5,18 +5,18 @@
         <div class="col-3">
 
             <div class="section-heading">
-                <h3>{{clients.title}}</h3>
-                <h2 class="section-title">{{clients.description}} </h2>
-                <p class="section-subtitle">{{clients.details}}</p>
+                <h3>{{clients?.data?.title}}</h3>
+                <h2 class="section-title">{{clients?.data?.description}} </h2>
+                <p class="section-subtitle">{{clients?.data?.detail}}</p>
             </div>
 
         </div>
 
         <div class="col-2-3">
-             @for(iconBlock of clients.iconBlock; track iconBlock){
+             @for(clientBlock of clients?.data?.clientBlock; track clientBlock){
             <a href="#" class="col-3">
-                <img src={{iconBlock.img}} alt="Company"/>
-                <div class="client-overlay"><span>{{iconBlock.name}}</span></div>
+                <img src={{clientBlock.img}} alt="Company"/>
+                <div class="client-overlay"><span>{{clientBlock.name}}</span></div>
             </a>
         }
         </div>

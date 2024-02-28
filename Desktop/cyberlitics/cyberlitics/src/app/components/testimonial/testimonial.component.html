@@ -4,16 +4,16 @@
     <div class="row clearfix">
 
         <div class="section-heading">
-            <h3>{{testimonial.title}}</h3>
-            <h2 class="section-title">{{testimonial.description}}</h2>
+            <h3>{{testimonial?.data?.title}}</h3>
+            <h2 class="section-title">{{ testimonial?.data?.description}}</h2>
         </div>
 
         <!--User Testimonial-->
-        @for(iconBlock of testimonial.iconBlock; track iconBlock){
+        @for(testimonialBlock of testimonial?.data?.testimonialBlock; track testimonialBlock){
         <blockquote class="col-3 testimonial classic">
-            <img src={{iconBlock.img}} alt="User"/>
-            <q>{{iconBlock.name}}</q>
-            <footer>{{iconBlock.footer}}</footer>
+            <img src={{testimonialBlock.img}} alt="User"/>
+            <q>{{testimonialBlock.name}}</q>
+            <footer>{{testimonialBlock.footer}}</footer>
         </blockquote>
     }
         <!-- End of Testimonial-->
