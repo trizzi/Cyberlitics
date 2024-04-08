@@ -1,6 +1,10 @@
 # Cyberlitics
 Cyberlitics is an Angular project aimed at providing analytics and insights into cyber-related data. It leverages Angular CLI version 17.2.1 for development.
 
+# Site Image view
+<img width="1680" alt="Screenshot 2024-04-08 at 07 04 59" src="https://github.com/trizzi/Cyberlitics/assets/33966004/11a13923-7d96-4ada-8474-a25736f4439a">
+
+
 # Development server
 To run the development server, execute ng serve in your terminal. Navigate to http://localhost:4200/ in your browser to access the application. The dev server automatically reloads whenever there are changes to the source files.
 
