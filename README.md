@@ -11,6 +11,7 @@ To run the development server, execute ng serve in your terminal. Navigate to ht
 # Code scaffolding
 Use ng generate component component-name to generate a new component. Additionally, you can use ng generate directive|pipe|service|class|guard|interface|enum|module for scaffolding different parts of your application.
 
+
 # Build
 Execute ng build to build the project. The build artifacts will be stored in the dist/ directory.
 
